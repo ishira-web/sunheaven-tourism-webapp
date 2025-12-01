@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +12,32 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = localFont({
+  src: [
+    {
+      path: "./fonts/Poppins-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Poppins-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Poppins-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Poppins-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +53,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>
