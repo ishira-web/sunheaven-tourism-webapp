@@ -15,7 +15,7 @@ export default function VideoBackground() {
              poster="/poster.jpg"
              className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover -translate-x-1/2 -translate-y-1/2 z-0" >
             
-            <source src="/bg.mp4" type="video/mp4" />
+            <source src="/bgmovie.mp4" type="video/mp4" />
             </video>
 
             {/* Overlay for better text readability */}
