@@ -24,7 +24,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <motion.h1
-                            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-poppins tracking-tight"
+                            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-romie tracking-tight"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
@@ -32,7 +32,7 @@ export default function AboutPage() {
                             About Us
                         </motion.h1>
                         <motion.p
-                            className="text-xl md:text-2xl text-white/95 font-poppins max-w-2xl mx-auto leading-relaxed"
+                            className="text-xl md:text-xl text-white/95 font-poppins max-w-2xl mx-auto leading-relaxed"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
@@ -67,7 +67,7 @@ export default function AboutPage() {
                                     ESTABLISHED IN HIKKADUWA
                                 </motion.div>
                                 <motion.h2
-                                    className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-poppins leading-tight"
+                                    className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-romie leading-tight"
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
@@ -144,7 +144,7 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 font-poppins">
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 font-romie">
                             Why Choose Us
                         </h2>
                         <p className="text-lg text-slate-600 max-w-2xl mx-auto font-poppins">
