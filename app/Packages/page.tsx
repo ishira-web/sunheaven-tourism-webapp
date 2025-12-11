@@ -23,7 +23,8 @@ export default function PackagesPage() {
             id: 3,
             image: '/poster2.jpg',
             title: 'Tailor Made Tours',
-            subtitle: 'Enjoy personalized itineraries designed to match your interests and wishes'
+            subtitle: 'Enjoy personalized itineraries designed to match your interests and wishes',
+            href: '/tourpages/tailormade'
         },
         {
             id: 4,
