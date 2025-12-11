@@ -1,19 +1,28 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 interface PackageCardProps {
     image: string
     title: string
     subtitle: string
+    href?: string
 }
 
 export default function PackageCard({
     image,
     title,
-    subtitle
+    subtitle,
+    href
 }: PackageCardProps) {
+    const ButtonContent = () => (
+        <button className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 border border-white/40 hover:border-white/60 font-poppins shadow-xl hover:shadow-2xl transform hover:scale-105">
+            Discover Tour
+        </button>
+    )
+
     return (
         <motion.div
             whileHover={{ y: -8, scale: 1.02 }}
@@ -45,9 +54,13 @@ export default function PackageCard({
                     </div>
                     
                     {/* Discover Tour Button */}
-                    <button className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 border border-white/40 hover:border-white/60 font-poppins shadow-xl hover:shadow-2xl transform hover:scale-105">
-                        Discover Tour
-                    </button>
+                    {href ? (
+                        <Link href={href}>
+                            <ButtonContent />
+                        </Link>
+                    ) : (
+                        <ButtonContent />
+                    )}
                 </div>
             </div>
         </motion.div>

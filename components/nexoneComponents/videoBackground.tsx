@@ -39,7 +39,7 @@ export default function VideoBackground() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                    className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-poppins font-semibold  text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl px-4 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent"
+                    className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-romie font-semibold  text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl px-4 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent"
                     style={{
                         textShadow: '0 2px 20px rgba(255, 255, 255, 0.3)'
                     }}

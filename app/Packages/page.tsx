@@ -10,7 +10,8 @@ export default function PackagesPage() {
             id: 1,
             image: '/poster2.jpg',
             title: 'Sri Lanka Tour Packages',
-            subtitle: 'Discover all corners of Sri Lanka with our carefully crafted tour'
+            subtitle: 'Discover all corners of Sri Lanka with our carefully crafted tour',
+            href: '/tourpages/SrilankaTourPkg'
         },
         {
             id: 2,
@@ -80,6 +81,7 @@ export default function PackagesPage() {
                                 image={pkg.image}
                                 title={pkg.title}
                                 subtitle={pkg.subtitle}
+                                href={pkg.href}
                             />
                         </motion.div>
                     ))}
