@@ -30,7 +30,8 @@ export default function PackagesPage() {
             id: 4,
             image: '/poster.jpg',
             title: 'Sri Lanka Day Tours',
-            subtitle: 'Short on time but still want to experience Sri Lanka\'s highlights?'
+            subtitle: 'Short on time but still want to experience Sri Lanka\'s highlights?',
+            href: '/tourpages/guideddaytours'
         }
     ]
 
