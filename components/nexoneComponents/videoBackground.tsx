@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 import { Button } from '../ui/button';
 
 export default function VideoBackground() {
@@ -53,7 +54,9 @@ export default function VideoBackground() {
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                     className="mt-6 sm:mt-8"
                 >
-                <Button className="px-5 py-6 uppercase font-poppins font-semibold text-white text-sm bg-amber-600">View Tour Packages</Button>
+                <Button asChild className="px-5 py-6 uppercase font-poppins font-semibold text-white text-sm bg-amber-600">
+                    <Link href="/Packages">View Tour Packages</Link>
+                </Button>
                 </motion.div>
             </div>
         </div>
